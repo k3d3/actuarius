@@ -5,7 +5,7 @@ name := "actuarius"
 
 description := "Actuarius is a Markdown Processor written in Scala using parser combinators."
 
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.5"
 
 scalacOptions += "-deprecation"
 
@@ -21,7 +21,7 @@ resolvers += "Scala" at "https://oss.sonatype.org/content/groups/scala-tools/"
 
 version := "0.2.7-SNAPSHOT"
 
-crossScalaVersions in ThisBuild := Seq("2.9.2", "2.10.0", "2.11.4")
+crossScalaVersions in ThisBuild := Seq("2.9.2", "2.10.0", "2.11.5")
 
 libraryDependencies ++= {
   Seq(
