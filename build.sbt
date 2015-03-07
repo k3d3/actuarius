@@ -1,9 +1,11 @@
 //Project Information
+enablePlugins(ScalaJSPlugin)
+
 name := "actuarius"
 
 description := "Actuarius is a Markdown Processor written in Scala using parser combinators."
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.11.4"
 
 scalacOptions += "-deprecation"
 
@@ -19,12 +21,14 @@ resolvers += "Scala" at "https://oss.sonatype.org/content/groups/scala-tools/"
 
 version := "0.2.7-SNAPSHOT"
 
-crossScalaVersions in ThisBuild := Seq("2.9.2", "2.10.0")
+crossScalaVersions in ThisBuild := Seq("2.9.2", "2.10.0", "2.11.4")
 
 libraryDependencies ++= {
   Seq(
-    "org.scalatest" %% "scalatest" % "1.8" % "test" withSources(),
-    "junit" % "junit" % "4.8.2" % "test"
+    "org.scalatest" % "scalatest_2.10" % "2.0" % "test" withSources(),
+    "junit" % "junit" % "4.8.2" % "test",
+    "org.scala-js" %%% "scala-parser-combinators" % "1.0.2",
+    "org.scala-lang.modules" %% "scala-xml" % "1.0.2"
   )
 }
 
